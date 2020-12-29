@@ -33,10 +33,6 @@ public:
         }
     }
 
-//    void copy_vector(vector<T>* pvector_to_copy)
-//    {
-//        pvector_to_copy->assign(data.begin(), data.end());
-//    }
 
 private:
     vector <T> data;
@@ -60,22 +56,8 @@ int main ()
         }
     } while (buffer != "");
 
-
-//    vector<string> copy;
-//    colors.copy_vector(&copy);
-
     int n = static_cast<int>(colors.size());
     colors.print_vector();
-
-   // vector<int> numbers;
-
-//    cout << "\v Enter Numbers"<<endl;
-//    int b;
-//    for (int i = 0; i < n; i++)
-//    {
-//        cin >> b;
-//        numbers.push_back(b);
-//    }
 
     int numbers [n];
     cout << "\v Enter Numbers"<<endl;
@@ -83,12 +65,6 @@ int main ()
     for (int i=0; i<n; i++)
         cin >>numbers[i];
 
-    //отладка
-//    cout << "\v Your Numbers"<<endl;
-//    for (int i = 0; i < n; i++)
-//    {
-//        cout <<numbers[i]<<endl;
-//    }
     for(int i = 0; i < n - 1; i++){
     int cur = i;
     while(numbers[cur] != i)
